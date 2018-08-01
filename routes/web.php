@@ -11,3 +11,5 @@
 |
 */
 Route::get('/', 'HomeController@index');
+
+Route::get('ucenter/callback', 'UCenterController@callback');
