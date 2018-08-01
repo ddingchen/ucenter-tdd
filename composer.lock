@@ -4,8 +4,54 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1088d10db89e5c954e921cc34e5c8a46",
+    "content-hash": "416813c7fe27bdb705a4529835318cff",
     "packages": [
+        {
+            "name": "ddingchen/thinker",
+            "version": "1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ddingchen/thinker.git",
+                "reference": "a1ee704cb4122e2f75e95fb399b7d0f027c311a2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ddingchen/thinker/zipball/a1ee704cb4122e2f75e95fb399b7d0f027c311a2",
+                "reference": "a1ee704cb4122e2f75e95fb399b7d0f027c311a2",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "~6.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "orchestra/testbench": "~3.4",
+                "phpunit/phpunit": "^5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Thinker\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Tests\\": "tests/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "ddingchen",
+                    "email": "183488175@qq.com"
+                }
+            ],
+            "description": "SDK for Thinker open platform.",
+            "support": {
+                "source": "https://github.com/ddingchen/thinker/tree/1.1",
+                "issues": "https://github.com/ddingchen/thinker/issues"
+            },
+            "time": "2018-07-15T13:57:17+00:00"
+        },
         {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
