@@ -25,6 +25,14 @@ class LoginTest extends TestCase
         ));
     }
 
+    public function test_it_shouldnt_redirect_ucenter_if_a_user_accesses_in_with_login_status()
+    {
+        session()->put('ucenter', 'login status');
+
+        $this->get('/')
+            ->assertSee('login status');
+    }
+
     public function test_it_redirects_home_with_login_status_if_a_user_successfully_login()
     {
         $this->mockUCenterResponse([
