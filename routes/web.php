@@ -10,6 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', 'HomeController@index');
+Route::group(['middleware' => 'auth.ucenter'], function () {
+    Route::get('/', 'HomeController@index');
+});
 
 Route::get('ucenter/callback', 'UCenterController@callback');
